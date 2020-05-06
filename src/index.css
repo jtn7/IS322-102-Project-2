@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#root {
+    padding-top: 2em;
+}
+
+.activeView {
+    color: rgb(68, 171, 255);
+}
+
+.nonActiveView {
+    cursor: pointer;
+}
+
+.nonActiveView:hover {
+    text-decoration: underline;
+}
+
+.ViewNav {
+    display: grid;
+    grid-template-columns: 15em 15em 10em;
+    justify-content: center;
+}
+
+@media (max-width: 645px) {
+    .ViewNav {
+        grid-template-columns: 15em;
+        row-gap: .7em;
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+.ViewNav .viewSelect {
+    font-size: 24pt;
+}
+
+.addTask {
+    height: 15pt;
+    font-size: 15pt;
+    line-height: 15pt;
+    width: 5.5em;
+    padding: .5em;
+    text-align: center;
+    background-color: rgb(88, 158, 88);
+    color: white;
+}
+
+.addTask:hover {
+    background-color: rgb(95, 168, 95);
+}
+
+.BoardView {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: 20em 20em 20em 20em;
+    column-gap: .7em;
+    padding-bottom: 2em;
+    scrollbar-width: none;
+}
+
+@media (max-width: 1325px) {
+    .BoardView {
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 1325px) {
+    .BoardView {
+        justify-content: center;
+    }
+}
+
+.BoardView .list {
+    height: 700px;
+    border-radius: 5px;
+    padding: .7em;
+
+    background-color: #85bdcf;
+
+    box-shadow:
+    0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.BoardView .list:nth-child(even) {
+    background-color: #85bdcf50;
+}
+
+.BoardView .list:last-child {
+    margin-right: 1em;
+}
+
+.BoardView .list .listTitle {
+    font-size: 24pt;
+    font-weight: 450;
+    margin-bottom: 0.4em;
+}
+
+.BoardView .list .card {
+    border-radius: 10px;
+
+    padding: 1em;
+    margin-bottom: 0.5em;
+    background-color: white;
+
+    box-shadow:
+    0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.BoardView .list .card .text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    height: 75%;
+    cursor: pointer;
+
+    font-size: 14pt;
+    line-height: 19pt;
+}
+
+.BoardView .list .card .text:hover {
+    text-decoration: underline;
+}
+
+.BoardView .list .card .type {
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+.BoardView .list .card .actions {
+    width: 50%;
+    margin: auto;
+    font-size: 14pt;
+    line-height: 14pt;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    padding: .3em;
+}
+
+.button {
+    border-radius: 15px;
+    cursor: pointer;
+
+    box-shadow:
+    0 2px 2px 0 rgba(0,0,0,.14),
+    0 3px 1px -2px rgba(0,0,0,.2),
+    0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 2em 2em;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.buttons div {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.rightButton {
+    grid-column-start: 2;
+}
