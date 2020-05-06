@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/is322-102-project-2/static/css/main.4d13f7da.chunk.css",
+    "main.js": "/is322-102-project-2/static/js/main.3a03e2da.chunk.js",
+    "main.js.map": "/is322-102-project-2/static/js/main.3a03e2da.chunk.js.map",
+    "runtime-main.js": "/is322-102-project-2/static/js/runtime-main.3b46ab35.js",
+    "runtime-main.js.map": "/is322-102-project-2/static/js/runtime-main.3b46ab35.js.map",
+    "static/js/2.181a8c58.chunk.js": "/is322-102-project-2/static/js/2.181a8c58.chunk.js",
+    "static/js/2.181a8c58.chunk.js.map": "/is322-102-project-2/static/js/2.181a8c58.chunk.js.map",
+    "index.html": "/is322-102-project-2/index.html",
+    "precache-manifest.3e5f293f61715449a3c6b4d8fd3caa08.js": "/is322-102-project-2/precache-manifest.3e5f293f61715449a3c6b4d8fd3caa08.js",
+    "service-worker.js": "/is322-102-project-2/service-worker.js",
+    "static/css/main.4d13f7da.chunk.css.map": "/is322-102-project-2/static/css/main.4d13f7da.chunk.css.map",
+    "static/js/2.181a8c58.chunk.js.LICENSE.txt": "/is322-102-project-2/static/js/2.181a8c58.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b46ab35.js",
+    "static/js/2.181a8c58.chunk.js",
+    "static/css/main.4d13f7da.chunk.css",
+    "static/js/main.3a03e2da.chunk.js"
+  ]
+}
